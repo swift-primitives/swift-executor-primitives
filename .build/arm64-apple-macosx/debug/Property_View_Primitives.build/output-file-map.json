@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-property-primitives/Sources/Property View Primitives/Property.View.Typed.Valued.Valued.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.Valued.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.Valued.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.Valued~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.Valued.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.Valued.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-property-primitives/Sources/Property View Primitives/Property.View.Typed.Valued.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.Valued.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-property-primitives/Sources/Property View Primitives/Property.View.Typed.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.Typed.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-property-primitives/Sources/Property View Primitives/Property.View.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/Property.View.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-property-primitives/Sources/Property View Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Property_View_Primitives.build/exports.dia"
+  }
+}

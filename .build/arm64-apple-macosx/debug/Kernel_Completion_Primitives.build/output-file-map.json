@@ -1,0 +1,124 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Buffer.Group.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.Group.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.Group.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.Group~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.Group.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.Group.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Buffer.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Buffer.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Capabilities.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Capabilities.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Capabilities.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Capabilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Capabilities.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Capabilities.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Driver.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Driver.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Driver.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Driver~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Driver.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Driver.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Event.Count.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Count.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Count.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Count~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Count.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Count.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Event.Flags.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Flags.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Flags.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Flags~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Flags.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Flags.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Event.Result.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Result.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Result.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Result~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Result.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.Result.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Event.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Event.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Notification.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Notification.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Notification.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Notification~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Notification.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Notification.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Submission.Count.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Count.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Count.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Count~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Count.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Count.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Submission.Flags.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Flags.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Flags.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Flags~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Flags.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Flags.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Submission.Opcode.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Opcode.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Opcode.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Opcode~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Opcode.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.Opcode.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Submission.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Submission.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.Token.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Token.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Token.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Token~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Token.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.Token.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/Kernel.Completion.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/Kernel.Completion.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Completion Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Completion_Primitives.build/exports.dia"
+  }
+}

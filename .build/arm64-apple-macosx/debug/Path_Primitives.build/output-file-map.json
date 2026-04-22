@@ -1,0 +1,75 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.Canonical.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Canonical.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Canonical.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Canonical~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Canonical.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Canonical.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.Decomposition.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Decomposition.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Decomposition.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Decomposition~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Decomposition.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Decomposition.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.Modification.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Modification.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Modification.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Modification~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Modification.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Modification.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.Resolution.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.Resolution.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Resolution.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.Scan.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Scan.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Scan.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Scan~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Scan.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.Scan.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.String.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.String.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.String.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.String~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.String.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.String.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.View.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.View.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.View.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.View~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.View.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.View.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Path.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Path.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-path-primitives/Sources/Path Primitives/Tagged+Path.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Tagged+Path.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Tagged+Path.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Tagged+Path~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Tagged+Path.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Path_Primitives.build/Tagged+Path.dia"
+  }
+}

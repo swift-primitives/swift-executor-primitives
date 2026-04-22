@@ -1,0 +1,68 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/Kernel.Event.Driver.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/Kernel.Event.Driver.Registration.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Registration.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Registration.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Registration~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Registration.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.Registration.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/Kernel.Event.Driver.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Driver.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/Kernel.Event.ID.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.ID.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.ID.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.ID~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.ID.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.ID.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/Kernel.Event.Interest.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Interest.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Interest.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Interest~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Interest.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Interest.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/Kernel.Event.Options.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Options.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Options.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Options~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Options.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Options.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/Kernel.Event.Source.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Source.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Source.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Source~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Source.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.Source.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/Kernel.Event.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/Kernel.Event.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Event Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/exports.dia"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Atom.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Atom.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Atom.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Atom~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Atom.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Atom.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Error.IO.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.IO.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.IO.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.IO~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.IO.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.IO.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Error.Parse.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.Parse.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.Parse.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.Parse~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.Parse.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.Parse.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Options.Dotfile.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Dotfile.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Dotfile.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Dotfile~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Dotfile.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Dotfile.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Options.Error.Policy.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.Policy.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.Policy.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.Policy~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.Policy.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.Policy.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Options.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Options.Ordering.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Ordering.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Ordering.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Ordering~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Ordering.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.Ordering.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Options.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Options.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Pattern.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Pattern.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Pattern.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Pattern~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Pattern.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Pattern.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Scalar.Class.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.Class.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.Class.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.Class~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.Class.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.Class.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Scalar.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Scalar.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.Segment.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Segment.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Segment.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Segment~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Segment.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.Segment.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/Kernel.Glob.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/Kernel.Glob.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Glob Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Glob_Primitives.build/exports.dia"
+  }
+}

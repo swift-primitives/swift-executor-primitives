@@ -1,0 +1,3 @@
+module Kernel_String_Primitives {
+    header "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_String_Primitives.build/include/Kernel String Primitives-Swift.h"
+}

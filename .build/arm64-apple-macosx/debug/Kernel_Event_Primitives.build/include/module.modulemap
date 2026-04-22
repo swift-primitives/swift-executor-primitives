@@ -1,0 +1,3 @@
+module Kernel_Event_Primitives {
+    header "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Event_Primitives.build/include/Kernel Event Primitives-Swift.h"
+}

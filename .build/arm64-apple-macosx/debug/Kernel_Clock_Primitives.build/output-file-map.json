@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Clock Primitives/Kernel.Clock.Continuous.Deadline.Next.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.Next.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.Next.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.Next~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.Next.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.Next.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Clock Primitives/Kernel.Clock.Continuous.Deadline.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.Deadline.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Clock Primitives/Kernel.Clock.Continuous.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Continuous.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Clock Primitives/Kernel.Clock.Suspending.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Suspending.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Suspending.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Suspending~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Suspending.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.Suspending.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Clock Primitives/Kernel.Clock.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/Kernel.Clock.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-kernel-primitives/Sources/Kernel Clock Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Clock_Primitives.build/exports.dia"
+  }
+}

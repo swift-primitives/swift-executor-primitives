@@ -1,0 +1,75 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/FloatingPoint+Rounding.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/FloatingPoint+Rounding.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/FloatingPoint+Rounding.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/FloatingPoint+Rounding~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/FloatingPoint+Rounding.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/FloatingPoint+Rounding.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/Numeric.Comparison.Equals.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.Equals.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.Equals.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.Equals~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.Equals.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.Equals.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/Numeric.Comparison.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Comparison.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/Numeric.Math.Accessor.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.Accessor.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.Accessor.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.Accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.Accessor.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.Accessor.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/Numeric.Math.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Math.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/Numeric.Quantized.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Quantized.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Quantized.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Quantized~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Quantized.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Quantized.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/Numeric.Rounding.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Rounding.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Rounding.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Rounding~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Rounding.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Rounding.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/Numeric.Transcendental.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Transcendental.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Transcendental.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Transcendental~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Transcendental.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.Transcendental.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/Numeric.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/Numeric.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-numeric-primitives/Sources/Numeric Primitives Core/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Numeric_Primitives_Core.build/exports.dia"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-binary-primitives/Sources/Binary LEB128 Primitives/Binary.LEB128.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-binary-primitives/Sources/Binary LEB128 Primitives/Binary.LEB128.Serialize.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Serialize.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Serialize.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Serialize~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Serialize.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.Serialize.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-binary-primitives/Sources/Binary LEB128 Primitives/Binary.LEB128.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/Binary.LEB128.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-binary-primitives/Sources/Binary LEB128 Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Binary_LEB128_Primitives.build/exports.dia"
+  }
+}

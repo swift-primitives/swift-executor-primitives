@@ -1,0 +1,3 @@
+module Kernel_Syscall_Primitives {
+    header "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Syscall_Primitives.build/include/Kernel Syscall Primitives-Swift.h"
+}

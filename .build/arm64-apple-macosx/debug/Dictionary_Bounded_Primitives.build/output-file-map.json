@@ -1,0 +1,19 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-dictionary-primitives/Sources/Dictionary Bounded Primitives/Dictionary.Ordered.Bounded Copyable.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/Dictionary.Ordered.Bounded Copyable.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/Dictionary.Ordered.Bounded Copyable.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/Dictionary.Ordered.Bounded Copyable~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/Dictionary.Ordered.Bounded Copyable.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/Dictionary.Ordered.Bounded Copyable.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-dictionary-primitives/Sources/Dictionary Bounded Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Dictionary_Bounded_Primitives.build/exports.dia"
+  }
+}

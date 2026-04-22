@@ -1,0 +1,68 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/Instant+Julian.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Instant+Julian.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Instant+Julian.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Instant+Julian~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Instant+Julian.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Instant+Julian.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/Time.Julian.Day+Constants.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Constants.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Constants.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Constants~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Constants.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Constants.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/Time.Julian.Day+Properties.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Properties.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Properties.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Properties~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Properties.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Properties.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/Time.Julian.Day+Time.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Time.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Time.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Time~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Time.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day+Time.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/Time.Julian.Day.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Day.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/Time.Julian.Offset+Constants.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset+Constants.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset+Constants.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset+Constants~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset+Constants.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset+Constants.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/Time.Julian.Offset.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.Offset.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/Time.Julian.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/Time.Julian.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-time-primitives/Sources/Time Julian Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Time_Julian_Primitives.build/exports.dia"
+  }
+}
