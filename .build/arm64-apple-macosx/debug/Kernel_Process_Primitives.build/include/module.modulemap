@@ -1,3 +1,0 @@
-module Kernel_Process_Primitives {
-    header "/Users/coen/Developer/swift-primitives/swift-executor-primitives/.build/arm64-apple-macosx/debug/Kernel_Process_Primitives.build/include/Kernel Process Primitives-Swift.h"
-}
