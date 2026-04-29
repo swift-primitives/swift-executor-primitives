@@ -55,7 +55,7 @@ extension Executor.Wait.Event.Source {
     /// - Returns: The number of events written into `buffer`.
     @inlinable
     public mutating func wait(
-        deadline: Kernel.Clock.Continuous.Deadline?,
+        deadline: Clock.Continuous.Deadline?,
         into buffer: inout [Kernel.Event]
     ) throws(Kernel.Event.Driver.Error) -> Int {
         try _source.poll(deadline: deadline, into: &buffer)
