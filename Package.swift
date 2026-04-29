@@ -35,10 +35,6 @@ let package = Package(
             targets: ["Executor Job Priority Primitives"]
         ),
         .library(
-            name: "Executor Wait Event Source Primitives",
-            targets: ["Executor Wait Event Source Primitives"]
-        ),
-        .library(
             name: "Executor Primitives Test Support",
             targets: ["Executor Primitives Test Support"]
         ),
@@ -46,7 +42,6 @@ let package = Package(
     dependencies: [
         .package(path: "../swift-queue-primitives"),
         .package(path: "../swift-heap-primitives"),
-        .package(path: "../swift-kernel-primitives"),
         .package(path: "../swift-clock-primitives"),
         .package(path: "../swift-index-primitives"),
         .package(path: "../swift-comparison-primitives"),
@@ -100,16 +95,6 @@ let package = Package(
             ]
         ),
 
-        // MARK: - Wait Event Source
-        .target(
-            name: "Executor Wait Event Source Primitives",
-            dependencies: [
-                "Executor Primitives Core",
-                .product(name: "Kernel Event Primitives", package: "swift-kernel-primitives"),
-                .product(name: "Kernel Time Primitives", package: "swift-kernel-primitives"),
-            ]
-        ),
-
         // MARK: - Umbrella
         .target(
             name: "Executor Primitives",
@@ -119,7 +104,6 @@ let package = Package(
                 "Executor Job Queue Primitives",
                 "Executor Job Deque Primitives",
                 "Executor Job Priority Primitives",
-                "Executor Wait Event Source Primitives",
             ]
         ),
 
