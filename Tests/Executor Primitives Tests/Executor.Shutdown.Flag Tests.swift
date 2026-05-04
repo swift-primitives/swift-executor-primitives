@@ -9,8 +9,8 @@
 //
 // ===----------------------------------------------------------------------===//
 
-import Testing
 import Executor_Primitives
+import Testing
 
 @Suite
 struct ShutdownFlagTests {

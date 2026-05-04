@@ -9,10 +9,10 @@
 //
 // ===----------------------------------------------------------------------===//
 
-import Testing
+import Clock_Primitives
 import Executor_Primitives
 import Executor_Primitives_Test_Support
-import Clock_Primitives
+import Testing
 
 @Suite
 struct JobPriorityTests {

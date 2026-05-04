@@ -9,11 +9,11 @@
 //
 // ===----------------------------------------------------------------------===//
 
+public import Clock_Primitives
+public import Comparison_Primitives
 public import Executor_Primitives_Core
 public import Heap_Primitives_Core
 public import Index_Primitives
-public import Comparison_Primitives
-public import Clock_Primitives
 
 extension Executor.Job {
     /// Deadline-ordered priority queue of executor jobs.

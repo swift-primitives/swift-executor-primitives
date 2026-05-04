@@ -10,9 +10,9 @@
 // ===----------------------------------------------------------------------===//
 
 public import Executor_Primitives_Core
+public import Index_Primitives
 public import Queue_DoubleEnded_Primitives
 public import Queue_Primitives_Core
-public import Index_Primitives
 
 extension Executor.Job {
     /// Thread-safe unbounded FIFO of executor jobs.

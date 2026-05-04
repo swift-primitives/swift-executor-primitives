@@ -10,8 +10,8 @@
 // ===----------------------------------------------------------------------===//
 
 public import Executor_Primitives_Core
-public import Synchronization
 public import Index_Primitives
+public import Synchronization
 
 extension Executor.Job {
     /// Chase-Lev work-stealing deque for executor jobs (Lê et al. 2013).
