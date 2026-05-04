@@ -9,9 +9,9 @@
 //
 // ===----------------------------------------------------------------------===//
 
-public import Executor_Primitives_Core
-public import Comparison_Primitives
 public import Clock_Primitives
+public import Comparison_Primitives
+public import Executor_Primitives_Core
 
 extension Executor.Job.Priority {
     /// A job paired with its scheduled deadline and insertion sequence.

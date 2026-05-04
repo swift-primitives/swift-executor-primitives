@@ -9,9 +9,9 @@
 //
 // ===----------------------------------------------------------------------===//
 
-import Testing
-import Synchronization
 import Executor_Primitives_Test_Support
+import Synchronization
+import Testing
 
 // MARK: - Contended Test Harness
 // Wraps ~Copyable deque + atomics in a Sendable class for closure capture.

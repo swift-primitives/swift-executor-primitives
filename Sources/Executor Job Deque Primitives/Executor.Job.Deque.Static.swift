@@ -10,9 +10,9 @@
 // ===----------------------------------------------------------------------===//
 
 public import Executor_Primitives_Core
-public import Synchronization
 public import Index_Primitives
 public import Memory_Primitives_Core
+public import Synchronization
 
 extension Executor.Job.Deque {
     /// Chase-Lev work-stealing deque with inline storage (zero heap allocation).
