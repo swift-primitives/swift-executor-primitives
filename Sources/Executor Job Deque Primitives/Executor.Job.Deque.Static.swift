@@ -11,7 +11,7 @@
 
 public import Executor_Primitives_Core
 public import Index_Primitives
-public import Memory_Primitives_Core
+public import Memory_Inline_Primitives
 public import Synchronization
 
 extension Executor.Job.Deque {
