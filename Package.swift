@@ -79,7 +79,7 @@ let package = Package(
             dependencies: [
                 "Executor Primitives Core",
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
-                .product(name: "Memory Primitives Core", package: "swift-memory-primitives"),
+                .product(name: "Memory Inline Primitives", package: "swift-memory-primitives"),
             ]
         ),
 
