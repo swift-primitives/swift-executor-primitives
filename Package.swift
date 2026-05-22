@@ -14,8 +14,8 @@ let package = Package(
     products: [
         // MARK: - Namespace
         .library(
-            name: "Executor Namespace",
-            targets: ["Executor Namespace"]
+            name: "Executor Primitive",
+            targets: ["Executor Primitive"]
         ),
         // MARK: - Umbrella
         .library(
@@ -51,7 +51,7 @@ let package = Package(
 
         // MARK: - Namespace
         .target(
-            name: "Executor Namespace",
+            name: "Executor Primitive",
             dependencies: []
         ),
 
@@ -59,7 +59,7 @@ let package = Package(
         .target(
             name: "Executor Primitives Core",
             dependencies: [
-                "Executor Namespace",
+                "Executor Primitive",
             ]
         ),
 
@@ -99,7 +99,7 @@ let package = Package(
         .target(
             name: "Executor Primitives",
             dependencies: [
-                "Executor Namespace",
+                "Executor Primitive",
                 "Executor Primitives Core",
                 "Executor Job Queue Primitives",
                 "Executor Job Deque Primitives",
