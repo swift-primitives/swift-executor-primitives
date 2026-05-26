@@ -41,6 +41,7 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../swift-queue-primitives"),
+        .package(path: "../swift-deque-primitives"),
         .package(path: "../swift-heap-primitives"),
         .package(path: "../swift-clock-primitives"),
         .package(path: "../swift-index-primitives"),
@@ -68,7 +69,8 @@ let package = Package(
             name: "Executor Job Queue Primitives",
             dependencies: [
                 "Executor Primitives Core",
-                .product(name: "Queue DoubleEnded Primitives", package: "swift-queue-primitives"),
+                .product(name: "Queue DoubleEnded Primitives", package: "swift-deque-primitives"),
+                .product(name: "Queue Primitives Core", package: "swift-queue-primitives"),
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
             ]
         ),
