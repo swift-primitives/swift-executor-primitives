@@ -40,13 +40,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "../swift-queue-primitives"),
-        .package(path: "../swift-deque-primitives"),
-        .package(path: "../swift-heap-primitives"),
-        .package(path: "../swift-clock-primitives"),
-        .package(path: "../swift-index-primitives"),
-        .package(path: "../swift-comparison-primitives"),
-        .package(path: "../swift-memory-primitives"),
+        .package(url: "https://github.com/swift-primitives/swift-queue-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-deque-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-heap-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-clock-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-index-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-comparison-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-memory-primitives.git", branch: "main"),
     ],
     targets: [
 
