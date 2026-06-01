@@ -40,7 +40,6 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-primitives/swift-queue-primitives.git", branch: "main"),
         .package(url: "https://github.com/swift-primitives/swift-deque-primitives.git", branch: "main"),
         .package(url: "https://github.com/swift-primitives/swift-heap-primitives.git", branch: "main"),
         .package(url: "https://github.com/swift-primitives/swift-clock-primitives.git", branch: "main"),
@@ -69,8 +68,7 @@ let package = Package(
             name: "Executor Job Queue Primitives",
             dependencies: [
                 "Executor Primitives Core",
-                .product(name: "Queue DoubleEnded Primitives", package: "swift-deque-primitives"),
-                .product(name: "Queue Primitives Core", package: "swift-queue-primitives"),
+                .product(name: "Deque Primitives", package: "swift-deque-primitives"),
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
             ]
         ),
@@ -90,7 +88,7 @@ let package = Package(
             name: "Executor Job Priority Primitives",
             dependencies: [
                 "Executor Primitives Core",
-                .product(name: "Heap Primitives Core", package: "swift-heap-primitives"),
+                .product(name: "Heap Primitives", package: "swift-heap-primitives"),
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
                 .product(name: "Comparison Primitives", package: "swift-comparison-primitives"),
                 .product(name: "Clock Primitives", package: "swift-clock-primitives"),

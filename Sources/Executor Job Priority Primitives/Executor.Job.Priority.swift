@@ -12,7 +12,7 @@
 public import Clock_Primitives
 public import Comparison_Primitives
 public import Executor_Primitives_Core
-public import Heap_Primitives_Core
+public import Heap_Primitives
 public import Index_Primitives
 
 extension Executor.Job {
