@@ -45,7 +45,7 @@ let package = Package(
         .package(url: "https://github.com/swift-primitives/swift-clock-primitives.git", branch: "main"),
         .package(url: "https://github.com/swift-primitives/swift-index-primitives.git", branch: "main"),
         .package(url: "https://github.com/swift-primitives/swift-comparison-primitives.git", branch: "main"),
-        .package(url: "https://github.com/swift-primitives/swift-memory-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-memory-inline-primitives.git", branch: "main"),
     ],
     targets: [
 
@@ -79,7 +79,7 @@ let package = Package(
             dependencies: [
                 "Executor Primitives Core",
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
-                .product(name: "Memory Inline Primitives", package: "swift-memory-primitives"),
+                .product(name: "Memory Inline Primitives", package: "swift-memory-inline-primitives"),
             ]
         ),
 
