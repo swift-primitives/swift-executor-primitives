@@ -53,6 +53,16 @@ extension Executor.Job.Deque {
             self._top = Atomic<Int>(0)
             self._bottom = Atomic<Int>(0)
         }
+
+        /// Masks a monotonic counter to its physical ring slot as a typed `Index`.
+        ///
+        /// `counter & _mask` is in `[0, N)` (mask is `N - 1`, `N` a power of two),
+        /// so the `Ordinal` construction is total — the typed `Store` seam
+        /// (`Memory.Inline.pointer(at:)`) consumes `Index<UnownedJob>`.
+        @inlinable
+        internal func _slot(_ counter: Int) -> Index<UnownedJob> {
+            Index<UnownedJob>(Ordinal(UInt(counter & _mask)))
+        }
     }
 }
 
@@ -79,7 +89,7 @@ extension Executor.Job.Deque.Static {
         let b = _bottom.load(ordering: .relaxed)
         let t = _top.load(ordering: .acquiring)
         if b - t >= N { return false }
-        unsafe _storage.pointer(at: b & _mask).pointee = job
+        unsafe _storage.pointer(at: _slot(b)).pointee = job
         _bottom.store(b + 1, ordering: .releasing)
         return true
     }
@@ -99,7 +109,7 @@ extension Executor.Job.Deque.Static {
             return nil
         }
 
-        let value = unsafe _storage.pointer(at: b & _mask).pointee
+        let value = unsafe _storage.pointer(at: _slot(b)).pointee
         if t < b { return value }
 
         let (won, _) = _top.compareExchange(
@@ -122,7 +132,7 @@ extension Executor.Job.Deque.Static {
 
         if t >= b { return nil }
 
-        let value = unsafe _storage.pointer(at: t & _mask).pointee
+        let value = unsafe _storage.pointer(at: _slot(t)).pointee
         let (won, _) = _top.compareExchange(
             expected: t,
             desired: t + 1,
