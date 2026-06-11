@@ -24,12 +24,25 @@ extension Executor.Job {
     /// - Important: `UnownedJob` is `BitwiseCopyable`. The Chase-Lev protocol
     ///   relies on element loads and stores being atomic at the word level;
     ///   no per-slot lifecycle management is needed.
+    ///
+    /// ## Safety Invariant
+    ///
+    /// Pointer-backed value type (`@safe` absorber per [MEM-SAFE-020]; disclosure
+    /// per [MEM-SAFE-025c]). `_elements` points at the tail allocation of the
+    /// `ManagedBuffer` instance pinned by `_storage` — a class-owned, stable heap
+    /// allocation that lives exactly as long as this struct, so the cached pointer
+    /// neither moves nor dangles. Every slot access is masked in-bounds
+    /// (`index & _mask`; capacity is a power of two), and the racing owner/stealer
+    /// accesses to the slots are guarded by the Chase-Lev atomic orderings on
+    /// `_top`/`_bottom` ([MEM-SAFE-024] Category A). No pointer escapes the
+    /// public API.
     // WHY: @unchecked Sendable — thread safety is guaranteed by the Chase-Lev
     // algorithm's atomic orderings (acquire/release on push/steal,
     // sequentially-consistent on take's last-element CAS), not by Swift's
     // Sendable checking. Single-owner (push/take), multi-stealer protocol
     // ensures no data races.
     // TRACKING: Standard concurrency primitive; no removal criteria.
+    @safe
     public struct Deque: ~Copyable, @unchecked Sendable {
         @usableFromInline
         internal let _storage: ManagedBuffer<Int, UnownedJob>
@@ -60,7 +73,7 @@ extension Executor.Job {
                 minimumCapacity: capacity,
                 makingHeaderWith: { _ in capacity }
             )
-            self._elements = unsafe _storage.withUnsafeMutablePointerToElements { $0 }
+            unsafe self._elements = _storage.withUnsafeMutablePointerToElements { unsafe $0 }
             self._top = Atomic<Int>(0)
             self._bottom = Atomic<Int>(0)
         }

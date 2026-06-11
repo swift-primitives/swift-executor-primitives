@@ -9,9 +9,11 @@
 //
 // ===----------------------------------------------------------------------===//
 
+public import Column_Primitives
 public import Deque_Primitives
 public import Executor_Primitives_Core
 public import Index_Primitives
+public import Buffer_Ring_Primitive
 
 extension Executor.Job {
     /// Thread-safe unbounded FIFO of executor jobs.
@@ -20,11 +22,11 @@ extension Executor.Job {
     /// This type is the storage primitive only — not itself locked.
     public struct Queue: ~Copyable {
         @usableFromInline
-        internal var _storage: Deque<UnownedJob>
+        internal var _storage: Deque<Column.Ring<UnownedJob>>
 
         @inlinable
         public init() {
-            self._storage = Deque()
+            self._storage = Deque<Column.Ring<UnownedJob>>()
             self._storage.reserve(try! .init(64))
         }
     }

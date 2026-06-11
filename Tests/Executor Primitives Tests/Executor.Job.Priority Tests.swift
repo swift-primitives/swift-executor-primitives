@@ -9,6 +9,16 @@
 //
 // ===----------------------------------------------------------------------===//
 
+// ⚠️ W5 QUARANTINE (2026-06-11): Job.Priority stores Heap<Entry>;
+// swift-heap-primitives is parked for its own template round and its
+// umbrella pulls the RED memory-small module. Only external consumers
+// are foundations/swift-executors (the deferred L2-tier round).
+// Restore with heap's round. (Self-restoring: the canImport gate re-admits
+// this suite as soon as the Executor Job Priority Primitives target —
+// and its umbrella re-export — re-enter the build graph; canImport gates
+// need a CLEAN build to re-evaluate.)
+#if canImport(Executor_Job_Priority_Primitives)
+
 import Clock_Primitives
 import Executor_Primitives
 import Executor_Primitives_Test_Support
@@ -92,3 +102,5 @@ struct JobPriorityTests {
         #expect(observed == [0, 1, 2, 100, 101])
     }
 }
+
+#endif  // canImport(Executor_Job_Priority_Primitives) — W5 QUARANTINE (2026-06-11)
