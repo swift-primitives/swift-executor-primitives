@@ -30,10 +30,15 @@ let package = Package(
             name: "Executor Job Deque Primitives",
             targets: ["Executor Job Deque Primitives"]
         ),
-        .library(
-            name: "Executor Job Priority Primitives",
-            targets: ["Executor Job Priority Primitives"]
-        ),
+        // ⚠️ W5 QUARANTINE (2026-06-11): Job.Priority stores Heap<Entry>;
+        // swift-heap-primitives is parked for its own template round and its
+        // umbrella pulls the RED memory-small module. Only external consumers
+        // are foundations/swift-executors (the deferred L2-tier round).
+        // Restore with heap's round.
+        // .library(
+        //     name: "Executor Job Priority Primitives",
+        //     targets: ["Executor Job Priority Primitives"]
+        // ),
         .library(
             name: "Executor Primitives Test Support",
             targets: ["Executor Primitives Test Support"]
@@ -41,11 +46,11 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/swift-primitives/swift-deque-primitives.git", branch: "main"),
-        .package(url: "https://github.com/swift-primitives/swift-heap-primitives.git", branch: "main"),
+        // .package(url: "https://github.com/swift-primitives/swift-heap-primitives.git", branch: "main"),  // W5 QUARANTINE (2026-06-11): Job.Priority parked — restore with heap's round
         .package(url: "https://github.com/swift-primitives/swift-clock-primitives.git", branch: "main"),
         .package(url: "https://github.com/swift-primitives/swift-index-primitives.git", branch: "main"),
-        .package(url: "https://github.com/swift-primitives/swift-comparison-primitives.git", branch: "main"),
-        .package(url: "https://github.com/swift-primitives/swift-memory-inline-primitives.git", branch: "main"),
+        // .package(url: "https://github.com/swift-primitives/swift-comparison-primitives.git", branch: "main"),  // W5 QUARANTINE (2026-06-11): only consumer was Job.Priority — restore with heap's round
+        .package(url: "https://github.com/swift-primitives/swift-column-primitives.git", branch: "main"),
     ],
     targets: [
 
@@ -70,6 +75,7 @@ let package = Package(
                 "Executor Primitives Core",
                 .product(name: "Deque Primitives", package: "swift-deque-primitives"),
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
+                .product(name: "Column Primitives", package: "swift-column-primitives"),
             ]
         ),
 
@@ -79,21 +85,25 @@ let package = Package(
             dependencies: [
                 "Executor Primitives Core",
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
-                .product(name: "Memory Inline Primitives", package: "swift-memory-inline-primitives"),
             ]
         ),
 
         // MARK: - Job Priority
-        .target(
-            name: "Executor Job Priority Primitives",
-            dependencies: [
-                "Executor Primitives Core",
-                .product(name: "Heap Primitives", package: "swift-heap-primitives"),
-                .product(name: "Index Primitives", package: "swift-index-primitives"),
-                .product(name: "Comparison Primitives", package: "swift-comparison-primitives"),
-                .product(name: "Clock Primitives", package: "swift-clock-primitives"),
-            ]
-        ),
+        // ⚠️ W5 QUARANTINE (2026-06-11): Job.Priority stores Heap<Entry>;
+        // swift-heap-primitives is parked for its own template round and its
+        // umbrella pulls the RED memory-small module. Only external consumers
+        // are foundations/swift-executors (the deferred L2-tier round).
+        // Restore with heap's round.
+        // .target(
+        //     name: "Executor Job Priority Primitives",
+        //     dependencies: [
+        //         "Executor Primitives Core",
+        //         .product(name: "Heap Primitives", package: "swift-heap-primitives"),
+        //         .product(name: "Index Primitives", package: "swift-index-primitives"),
+        //         .product(name: "Comparison Primitives", package: "swift-comparison-primitives"),
+        //         .product(name: "Clock Primitives", package: "swift-clock-primitives"),
+        //     ]
+        // ),
 
         // MARK: - Umbrella
         .target(
@@ -103,7 +113,12 @@ let package = Package(
                 "Executor Primitives Core",
                 "Executor Job Queue Primitives",
                 "Executor Job Deque Primitives",
-                "Executor Job Priority Primitives",
+                // ⚠️ W5 QUARANTINE (2026-06-11): Job.Priority stores Heap<Entry>;
+                // swift-heap-primitives is parked for its own template round and its
+                // umbrella pulls the RED memory-small module. Only external consumers
+                // are foundations/swift-executors (the deferred L2-tier round).
+                // Restore with heap's round.
+                // "Executor Job Priority Primitives",
             ]
         ),
 
