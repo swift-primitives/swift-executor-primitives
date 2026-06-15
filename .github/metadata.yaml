@@ -1,6 +1,6 @@
 # .github/metadata.yaml
 # Triaged by AI-assisted bulk pass (2026-04-29).
-description: "Executor types for Swift."
+description: "Executor — job-scheduling primitives: a thread-safe FIFO Job.Queue and a Chase-Lev work-stealing Job.Deque over UnownedJob, with a Shutdown.Flag."
 topics:
   - primitives
   - executor
