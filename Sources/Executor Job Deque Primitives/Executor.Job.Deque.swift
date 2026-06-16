@@ -9,7 +9,7 @@
 //
 // ===----------------------------------------------------------------------===//
 
-public import Executor_Primitives_Core
+public import Executor_Job_Primitives
 public import Index_Primitives
 public import Synchronization
 

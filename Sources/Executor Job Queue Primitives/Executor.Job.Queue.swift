@@ -11,7 +11,7 @@
 
 public import Column_Primitives
 public import Deque_Primitives
-public import Executor_Primitives_Core
+public import Executor_Job_Primitives
 public import Index_Primitives
 public import Buffer_Ring_Primitive
 

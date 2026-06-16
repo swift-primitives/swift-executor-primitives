@@ -12,16 +12,24 @@ let package = Package(
         .visionOS(.v26)
     ],
     products: [
-        // MARK: - Namespace
+        // MARK: - Namespace + sub-namespaces ([MOD-017] singular root + [MOD-031] per-sub-namespace)
         .library(
             name: "Executor Primitive",
             targets: ["Executor Primitive"]
         ),
-        // MARK: - Umbrella
         .library(
-            name: "Executor Primitives",
-            targets: ["Executor Primitives"]
+            name: "Executor Job Primitives",
+            targets: ["Executor Job Primitives"]
         ),
+        .library(
+            name: "Executor Shutdown Primitives",
+            targets: ["Executor Shutdown Primitives"]
+        ),
+        .library(
+            name: "Executor Wait Primitives",
+            targets: ["Executor Wait Primitives"]
+        ),
+        // MARK: - Job containers
         .library(
             name: "Executor Job Queue Primitives",
             targets: ["Executor Job Queue Primitives"]
@@ -39,30 +47,53 @@ let package = Package(
         //     name: "Executor Job Priority Primitives",
         //     targets: ["Executor Job Priority Primitives"]
         // ),
+        // MARK: - Umbrella
+        .library(
+            name: "Executor Primitives",
+            targets: ["Executor Primitives"]
+        ),
         .library(
             name: "Executor Primitives Test Support",
             targets: ["Executor Primitives Test Support"]
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-primitives/swift-deque-primitives.git", branch: "main"),
-        // .package(url: "https://github.com/swift-primitives/swift-heap-primitives.git", branch: "main"),  // W5 QUARANTINE (2026-06-11): Job.Priority parked — restore with heap's round
+        .package(url: "https://github.com/swift-primitives/swift-buffer-ring-primitives.git", branch: "main"),
         .package(url: "https://github.com/swift-primitives/swift-clock-primitives.git", branch: "main"),
-        .package(url: "https://github.com/swift-primitives/swift-index-primitives.git", branch: "main"),
         // .package(url: "https://github.com/swift-primitives/swift-comparison-primitives.git", branch: "main"),  // W5 QUARANTINE (2026-06-11): only consumer was Job.Priority — restore with heap's round
         .package(url: "https://github.com/swift-primitives/swift-column-primitives.git", branch: "main"),
+        .package(url: "https://github.com/swift-primitives/swift-deque-primitives.git", branch: "main"),
+        // .package(url: "https://github.com/swift-primitives/swift-heap-primitives.git", branch: "main"),  // W5 QUARANTINE (2026-06-11): Job.Priority parked — restore with heap's round
+        .package(url: "https://github.com/swift-primitives/swift-index-primitives.git", branch: "main"),
     ],
     targets: [
 
-        // MARK: - Namespace
+        // MARK: - Namespace + sub-namespaces
+        //
+        // [MOD-017]: `Executor Primitive` (SINGULAR) owns the root `enum Executor {}`
+        // plus the package's foundational, stdlib-only declarations. Zero
+        // external-package dependencies — the load-bearing invariant. [MOD-031]:
+        // each sub-namespace `Executor.{X}` is its own target depending only on the
+        // zero-dep root (`Executor.Shutdown.Flag` reaches `Atomic` via the toolchain
+        // `Synchronization` module, not a package dependency).
         .target(
             name: "Executor Primitive",
             dependencies: []
         ),
-
-        // MARK: - Core
         .target(
-            name: "Executor Primitives Core",
+            name: "Executor Job Primitives",
+            dependencies: [
+                "Executor Primitive",
+            ]
+        ),
+        .target(
+            name: "Executor Shutdown Primitives",
+            dependencies: [
+                "Executor Primitive",
+            ]
+        ),
+        .target(
+            name: "Executor Wait Primitives",
             dependencies: [
                 "Executor Primitive",
             ]
@@ -72,10 +103,11 @@ let package = Package(
         .target(
             name: "Executor Job Queue Primitives",
             dependencies: [
-                "Executor Primitives Core",
+                "Executor Job Primitives",
+                .product(name: "Buffer Ring Primitive", package: "swift-buffer-ring-primitives"),
+                .product(name: "Column Primitives", package: "swift-column-primitives"),
                 .product(name: "Deque Primitives", package: "swift-deque-primitives"),
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
-                .product(name: "Column Primitives", package: "swift-column-primitives"),
             ]
         ),
 
@@ -83,7 +115,7 @@ let package = Package(
         .target(
             name: "Executor Job Deque Primitives",
             dependencies: [
-                "Executor Primitives Core",
+                "Executor Job Primitives",
                 .product(name: "Index Primitives", package: "swift-index-primitives"),
             ]
         ),
@@ -93,11 +125,13 @@ let package = Package(
         // swift-heap-primitives is parked for its own template round and its
         // umbrella pulls the RED memory-small module. Only external consumers
         // are foundations/swift-executors (the deferred L2-tier round).
-        // Restore with heap's round.
+        // Restore with heap's round — and repoint the sources' `Executor_Primitives_Core`
+        // import to `Executor_Job_Primitives` ([MOD-031] decomposition, 2026-06-16;
+        // dormant now — target not built, no build impact).
         // .target(
         //     name: "Executor Job Priority Primitives",
         //     dependencies: [
-        //         "Executor Primitives Core",
+        //         "Executor Job Primitives",
         //         .product(name: "Heap Primitives", package: "swift-heap-primitives"),
         //         .product(name: "Index Primitives", package: "swift-index-primitives"),
         //         .product(name: "Comparison Primitives", package: "swift-comparison-primitives"),
@@ -106,11 +140,15 @@ let package = Package(
         // ),
 
         // MARK: - Umbrella
+        //
+        // [MOD-005]: re-exports ALL sub-targets (root + sub-namespaces + Job containers).
         .target(
             name: "Executor Primitives",
             dependencies: [
                 "Executor Primitive",
-                "Executor Primitives Core",
+                "Executor Job Primitives",
+                "Executor Shutdown Primitives",
+                "Executor Wait Primitives",
                 "Executor Job Queue Primitives",
                 "Executor Job Deque Primitives",
                 // ⚠️ W5 QUARANTINE (2026-06-11): Job.Priority stores Heap<Entry>;
