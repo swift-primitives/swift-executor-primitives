@@ -59,7 +59,9 @@ extension Executor.Job.Priority {
         _storage.push(Entry(job: job, deadline: deadline, sequence: sequence))
     }
 
-    /// The earliest deadline without removal. `nil` if empty.
+    /// The earliest deadline without removal.
+    ///
+    /// `nil` if empty.
     @inlinable
     public var peek: Clock.Continuous.Instant? {
         _storage.peek?.deadline
