@@ -21,6 +21,7 @@ extension Executor.Shutdown {
         @usableFromInline
         internal let _atomic: Atomic<Bool>
 
+        /// Creates a flag in the not-yet-signaled state.
         @inlinable
         public init() {
             self._atomic = .init(false)
@@ -39,7 +40,9 @@ extension Executor.Shutdown.Flag {
         _atomic.load(ordering: .relaxed)
     }
 
-    /// Signal shutdown. Release ordering publishes preceding writes
+    /// Signal shutdown.
+    ///
+    /// Release ordering publishes preceding writes
     /// to the observing run-loop thread.
     @inlinable
     public func set() {

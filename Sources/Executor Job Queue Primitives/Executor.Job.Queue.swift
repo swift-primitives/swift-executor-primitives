@@ -9,11 +9,11 @@
 //
 // ===----------------------------------------------------------------------===//
 
+public import Buffer_Ring_Primitive
 public import Column_Primitives
 public import Deque_Primitives
 public import Executor_Job_Primitives
 public import Index_Primitives
-public import Buffer_Ring_Primitive
 
 extension Executor.Job {
     /// Thread-safe unbounded FIFO of executor jobs.
@@ -24,9 +24,14 @@ extension Executor.Job {
         @usableFromInline
         internal var _storage: Deque<Column.Ring<UnownedJob>>
 
+        /// Creates an empty queue, pre-reserving a small initial back-buffer capacity.
         @inlinable
         public init() {
             self._storage = Deque<Column.Ring<UnownedJob>>()
+            // WHY: 64 is a fixed positive literal within Count's valid range — the throwing
+            // init never fails for this constant.
+            // swift-format-ignore: NeverUseForceTry
+            // swiftlint:disable:next force_try
             self._storage.reserve(try! .init(64))
         }
     }
@@ -53,9 +58,9 @@ extension Executor.Job.Queue {
         _storage.take(from: .front)
     }
 
-    /// Move every pending job into `other`, leaving `self` empty. O(1) via swap.
+    /// Move every pending job into `other`, leaving `self` empty.
     ///
-    /// Used by the batch-drain pattern in `Kernel.Thread.Executor.Polling`:
+    /// O(1) via swap. Used by the batch-drain pattern in `Kernel.Thread.Executor.Polling`:
     /// lock → drain into local → unlock → execute local jobs.
     ///
     /// - Precondition: `other` is empty.

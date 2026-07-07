@@ -48,6 +48,7 @@ extension Executor.Job.Priority {
 // MARK: - Equation.Protocol
 
 extension Executor.Job.Priority.Entry: Equation.`Protocol` {
+    /// Entries are equal when their deadline and insertion sequence both match.
     @inlinable
     public static func == (lhs: borrowing Self, rhs: borrowing Self) -> Bool {
         (lhs.deadline, lhs.sequence) == (rhs.deadline, rhs.sequence)

@@ -29,6 +29,7 @@ extension Executor.Job {
         @usableFromInline
         internal var _nextSequence: UInt64
 
+        /// Creates an empty priority queue.
         @inlinable
         public init() {
             self._storage = Heap(order: .ascending)
@@ -78,7 +79,8 @@ extension Executor.Job.Priority {
         _ body: (UnownedJob) -> Void
     ) {
         while let head = _storage.peek, head.deadline <= now {
-            body(_storage.take!.job)
+            guard let popped = _storage.take else { break }
+            body(popped.job)
         }
     }
 }

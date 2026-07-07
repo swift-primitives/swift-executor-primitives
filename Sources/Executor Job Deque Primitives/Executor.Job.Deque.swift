@@ -14,7 +14,15 @@ public import Index_Primitives
 public import Synchronization
 
 extension Executor.Job {
-    /// Chase-Lev work-stealing deque for executor jobs (Lê et al. 2013).
+    // WHY: @unchecked Sendable — thread safety is guaranteed by the Chase-Lev
+    // algorithm's atomic orderings (acquire/release on push/steal,
+    // sequentially-consistent on take's last-element CAS), not by Swift's
+    // Sendable checking. Single-owner (push/take), multi-stealer protocol
+    // ensures no data races.
+    // TRACKING: Standard concurrency primitive; no removal criteria.
+    /// Chase-Lev work-stealing deque for executor jobs.
+    ///
+    /// Reference: Lê and colleagues, 2013 (the original Chase-Lev paper).
     ///
     /// Single-owner, multi-stealer bounded deque backed by a heap-allocated
     /// ring buffer. The owner calls ``push(_:)`` and ``take()``; any thread
@@ -36,12 +44,6 @@ extension Executor.Job {
     /// accesses to the slots are guarded by the Chase-Lev atomic orderings on
     /// `_top`/`_bottom` ([MEM-SAFE-024] Category A). No pointer escapes the
     /// public API.
-    // WHY: @unchecked Sendable — thread safety is guaranteed by the Chase-Lev
-    // algorithm's atomic orderings (acquire/release on push/steal,
-    // sequentially-consistent on take's last-element CAS), not by Swift's
-    // Sendable checking. Single-owner (push/take), multi-stealer protocol
-    // ensures no data races.
-    // TRACKING: Standard concurrency primitive; no removal criteria.
     @safe
     public struct Deque: ~Copyable, @unchecked Sendable {
         @usableFromInline
@@ -89,6 +91,10 @@ extension Executor.Job.Deque {
     public var count: Index<UnownedJob>.Count {
         let b = _bottom.load(ordering: .relaxed)
         let t = _top.load(ordering: .relaxed)
+        // WHY: `max(0, b - t)` clamps to a non-negative Int, which is always within
+        // Count's valid range — the throwing init never fails for a clamped value.
+        // swift-format-ignore: NeverUseForceTry
+        // swiftlint:disable:next force_try
         return try! .init(max(0, b - t))
     }
 
@@ -101,7 +107,9 @@ extension Executor.Job.Deque {
         _bottom.load(ordering: .relaxed) <= _top.load(ordering: .relaxed)
     }
 
-    /// Owner-side push. Returns `true` on success, `false` if full.
+    /// Owner-side push.
+    ///
+    /// Returns `true` on success, `false` if full.
     ///
     /// - Precondition: Called only by the owning thread.
     @inlinable
@@ -114,7 +122,9 @@ extension Executor.Job.Deque {
         return true
     }
 
-    /// Owner-side take (LIFO). Returns `nil` if empty.
+    /// Owner-side take (LIFO).
+    ///
+    /// Returns `nil` if empty.
     ///
     /// - Precondition: Called only by the owning thread.
     @inlinable
@@ -143,9 +153,9 @@ extension Executor.Job.Deque {
         return won ? value : nil
     }
 
-    /// Stealer-side steal (FIFO). Returns `nil` if empty or contention loss.
+    /// Stealer-side steal (FIFO).
     ///
-    /// May be called from any thread.
+    /// Returns `nil` if empty or contention loss. May be called from any thread.
     @inlinable
     public func steal() -> UnownedJob? {
         let t = _top.load(ordering: .acquiring)
