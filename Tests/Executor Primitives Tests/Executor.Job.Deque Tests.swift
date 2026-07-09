@@ -31,8 +31,9 @@ private final class HeapHarness: @unchecked Sendable {
 
 // MARK: - Heap Variant
 
-@Suite
-struct JobDequeTests {
+extension Executor.Job.Deque {
+    @Suite
+    struct Test {
 
     @Test
     func `empty Deque Reports Is Empty`() {
@@ -164,5 +165,6 @@ struct JobDequeTests {
         let t = h.taken.load(ordering: .acquiring)
         let s = h.stolen.load(ordering: .acquiring)
         #expect(t + s == totalPush)
+    }
     }
 }
