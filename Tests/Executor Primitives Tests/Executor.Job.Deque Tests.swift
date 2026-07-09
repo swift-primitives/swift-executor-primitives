@@ -35,26 +35,26 @@ private final class HeapHarness: @unchecked Sendable {
 struct JobDequeTests {
 
     @Test
-    func emptyDequeReportsIsEmpty() {
+    func `empty Deque Reports Is Empty`() {
         let deque = Executor.Job.Deque(capacity: 8)
         let empty = deque.isEmpty
         #expect(empty)
     }
 
     @Test
-    func takeFromEmptyReturnsNil() {
+    func `take From Empty Returns Nil`() {
         let deque = Executor.Job.Deque(capacity: 8)
         #expect(deque.take() == nil)
     }
 
     @Test
-    func stealFromEmptyReturnsNil() {
+    func `steal From Empty Returns Nil`() {
         let deque = Executor.Job.Deque(capacity: 8)
         #expect(deque.steal() == nil)
     }
 
     @Test
-    func pushTakeRoundTrip() {
+    func `push Take Round Trip`() {
         let deque = Executor.Job.Deque(capacity: 8)
         #expect(deque.push(unsafe UnownedJob.mock(42)))
         let notEmpty = !deque.isEmpty
@@ -67,7 +67,7 @@ struct JobDequeTests {
     }
 
     @Test
-    func pushStealRoundTrip() {
+    func `push Steal Round Trip`() {
         let deque = Executor.Job.Deque(capacity: 8)
         #expect(deque.push(unsafe UnownedJob.mock(99)))
         let job = deque.steal()
@@ -78,7 +78,7 @@ struct JobDequeTests {
     }
 
     @Test
-    func pushReturnsFalseWhenFull() {
+    func `push Returns False When Full`() {
         let deque = Executor.Job.Deque(capacity: 4)
         for i in 0..<4 {
             #expect(deque.push(unsafe UnownedJob.mock(i)))
@@ -89,7 +89,7 @@ struct JobDequeTests {
 
     // V1: Single-threaded LIFO/FIFO discipline (port of spike V1).
     @Test
-    func lifoTakeFifoSteal() {
+    func `lifo Take Fifo Steal`() {
         let d = Executor.Job.Deque(capacity: 8)
 
         for i in 0..<5 {
@@ -115,7 +115,7 @@ struct JobDequeTests {
     // V2: Contended push/take/steal with count reconciliation
     // (port of spike V2). Verifies pushed == taken + stolen.
     @Test
-    func contendedCountReconciliation() async {
+    func `contended Count Reconciliation`() async {
         let h = HeapHarness(capacity: 4096)
         let totalPush = 100_000
         let stealerCount = 4
