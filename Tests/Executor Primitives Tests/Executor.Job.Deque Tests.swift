@@ -81,7 +81,7 @@ extension Executor.Job.Deque {
         @Test
         func `push Returns False When Full`() {
             let deque = Executor.Job.Deque(capacity: 4)
-            for i in 0..<4 {
+            (0..<4).forEach { i in
                 #expect(deque.push(unsafe UnownedJob.mock(i)))
             }
             let full = !deque.push(unsafe UnownedJob.mock(999))
@@ -93,7 +93,7 @@ extension Executor.Job.Deque {
         func `lifo Take Fifo Steal`() {
             let d = Executor.Job.Deque(capacity: 8)
 
-            for i in 0..<5 {
+            (0..<5).forEach { i in
                 #expect(d.push(unsafe UnownedJob.mock(i)))
             }
 

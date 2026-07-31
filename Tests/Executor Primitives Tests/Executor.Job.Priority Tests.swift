@@ -55,7 +55,7 @@
                 var pq = Executor.Job.Priority()
                 let deadline = Clock.Continuous.Instant(nanoseconds: 0)
 
-                for tag in 0..<5 {
+                (0..<5).forEach { tag in
                     pq.schedule(unsafe UnownedJob.mock(tag), at: deadline)
                 }
 

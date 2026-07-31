@@ -45,7 +45,7 @@ extension Executor.Job {
     /// `_top`/`_bottom` ([MEM-SAFE-024] Category A). No pointer escapes the
     /// public API.
     @safe
-    public struct Deque: ~Copyable, @unchecked Sendable {
+    public struct Deque: ~Copyable, Sendable {
         @usableFromInline
         internal let _storage: ManagedBuffer<Int, UnownedJob>
 
@@ -117,6 +117,10 @@ extension Executor.Job.Deque {
         let b = _bottom.load(ordering: .relaxed)
         let t = _top.load(ordering: .acquiring)
         if b - t >= _storage.header { return false }
+        // SAFETY: `_elements` is the class-owned, stable ManagedBuffer tail
+        // allocation pinned by `_storage`; `b & _mask` is masked in-bounds by
+        // the power-of-two capacity invariant, so the advanced pointer never
+        // escapes the allocation.
         unsafe _elements.advanced(by: b & _mask).pointee = job
         _bottom.store(b + 1, ordering: .releasing)
         return true
@@ -139,6 +143,10 @@ extension Executor.Job.Deque {
             return nil
         }
 
+        // SAFETY: `_elements` is the class-owned, stable ManagedBuffer tail
+        // allocation pinned by `_storage`; `b & _mask` is masked in-bounds by
+        // the power-of-two capacity invariant, so the advanced pointer never
+        // escapes the allocation.
         let value = unsafe _elements.advanced(by: b & _mask).pointee
         if t < b { return value }
 
@@ -163,6 +171,10 @@ extension Executor.Job.Deque {
 
         if t >= b { return nil }
 
+        // SAFETY: `_elements` is the class-owned, stable ManagedBuffer tail
+        // allocation pinned by `_storage`; `t & _mask` is masked in-bounds by
+        // the power-of-two capacity invariant, so the advanced pointer never
+        // escapes the allocation.
         let value = unsafe _elements.advanced(by: t & _mask).pointee
         let (won, _) = _top.compareExchange(
             expected: t,
