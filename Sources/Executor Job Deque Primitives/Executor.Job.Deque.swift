@@ -45,7 +45,7 @@ extension Executor.Job {
     /// `_top`/`_bottom` ([MEM-SAFE-024] Category A). No pointer escapes the
     /// public API.
     @safe
-    public struct Deque: ~Copyable, Sendable {
+    public struct Deque: ~Copyable, @unchecked Sendable {
         @usableFromInline
         internal let _storage: ManagedBuffer<Int, UnownedJob>
 
