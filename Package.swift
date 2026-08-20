@@ -1,15 +1,15 @@
-// swift-tools-version: 6.3.3
+// swift-tools-version: 6.4
 
 import PackageDescription
 
 let package = Package(
     name: "swift-executor-primitives",
     platforms: [
-        .macOS("27"),
-        .iOS("27"),
-        .tvOS("27"),
-        .watchOS("27"),
-        .visionOS("27")
+        .macOS(.v27),
+        .iOS(.v27),
+        .tvOS(.v27),
+        .watchOS(.v27),
+        .visionOS(.v27),
     ],
     products: [
         // MARK: - Namespace + sub-namespaces ([MOD-017] singular root + [MOD-031] per-sub-namespace)
@@ -58,13 +58,28 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-primitives/swift-buffer-ring-primitives.git", branch: "main"),
-        .package(url: "https://github.com/swift-primitives/swift-clock-primitives.git", branch: "main"),
+        .package(
+            url: "https://github.com/swift-primitives/swift-buffer-ring-primitives.git",
+            branch: "main"
+        ),
+        .package(
+            url: "https://github.com/swift-primitives/swift-clock-primitives.git",
+            branch: "main"
+        ),
         // .package(url: "https://github.com/swift-primitives/swift-comparison-primitives.git", branch: "main"),  // W5 QUARANTINE (2026-06-11): only consumer was Job.Priority — restore with heap's round
-        .package(url: "https://github.com/swift-primitives/swift-column-primitives.git", branch: "main"),
-        .package(url: "https://github.com/swift-primitives/swift-deque-primitives.git", branch: "main"),
+        .package(
+            url: "https://github.com/swift-primitives/swift-column-primitives.git",
+            branch: "main"
+        ),
+        .package(
+            url: "https://github.com/swift-primitives/swift-deque-primitives.git",
+            branch: "main"
+        ),
         // .package(url: "https://github.com/swift-primitives/swift-heap-primitives.git", branch: "main"),  // W5 QUARANTINE (2026-06-11): Job.Priority parked — restore with heap's round
-        .package(url: "https://github.com/swift-primitives/swift-index-primitives.git", branch: "main"),
+        .package(
+            url: "https://github.com/swift-primitives/swift-index-primitives.git",
+            branch: "main"
+        ),
     ],
     targets: [
 
@@ -83,19 +98,19 @@ let package = Package(
         .target(
             name: "Executor Job Primitives",
             dependencies: [
-                "Executor Primitive",
+                "Executor Primitive"
             ]
         ),
         .target(
             name: "Executor Shutdown Primitives",
             dependencies: [
-                "Executor Primitive",
+                "Executor Primitive"
             ]
         ),
         .target(
             name: "Executor Wait Primitives",
             dependencies: [
-                "Executor Primitive",
+                "Executor Primitive"
             ]
         ),
 
@@ -164,7 +179,7 @@ let package = Package(
         .target(
             name: "Executor Primitives Test Support",
             dependencies: [
-                "Executor Primitives",
+                "Executor Primitives"
             ],
             path: "Tests/Support"
         ),
@@ -177,7 +192,7 @@ let package = Package(
                 "Executor Primitives Test Support",
                 .product(name: "Clock Primitives", package: "swift-clock-primitives"),
             ]
-        )
+        ),
     ],
     swiftLanguageModes: [.v6]
 )
@@ -197,10 +212,13 @@ for target in package.targets where ![.system, .binary, .plugin, .macro].contain
     ]
 
     let package: [SwiftSetting] = [
-        .define("KERNEL_AVAILABLE", .when(platforms: [
-            .macOS, .iOS, .tvOS, .watchOS, .visionOS,
-            .linux, .windows, .android, .openbsd,
-        ])),
+        .define(
+            "KERNEL_AVAILABLE",
+            .when(platforms: [
+                .macOS, .iOS, .tvOS, .watchOS, .visionOS,
+                .linux, .windows, .android, .openbsd,
+            ])
+        )
     ]
 
     target.swiftSettings = (target.swiftSettings ?? []) + ecosystem + package
