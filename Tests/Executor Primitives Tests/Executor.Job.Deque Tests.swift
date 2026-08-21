@@ -1,22 +1,6 @@
-// ===----------------------------------------------------------------------===//
-//
-// This source file is part of the swift-primitives open source project
-//
-// Copyright (c) 2024-2026 Coen ten Thije Boonkkamp and the swift-primitives
-// project authors. Licensed under Apache License v2.0
-//
-// See LICENSE for license information
-//
-// ===----------------------------------------------------------------------===//
-
 import Executor_Primitives_Test_Support
 import Synchronization
 import Testing
-
-// MARK: - Contended Test Harness
-// Wraps ~Copyable deque + atomics in a Sendable class for closure capture.
-// Atomic<Int> and Executor.Job.Deque are both ~Copyable — cannot be captured
-// directly in @Sendable @escaping closures.
 
 private final class HeapHarness: @unchecked Sendable {
     let deque: Executor.Job.Deque
@@ -28,8 +12,6 @@ private final class HeapHarness: @unchecked Sendable {
         self.deque = .init(capacity: capacity)
     }
 }
-
-// MARK: - Heap Variant
 
 extension Executor.Job.Deque {
     @Suite
@@ -88,7 +70,6 @@ extension Executor.Job.Deque {
             #expect(full)
         }
 
-        // V1: Single-threaded LIFO/FIFO discipline (port of spike V1).
         @Test
         func `lifo Take Fifo Steal`() {
             let d = Executor.Job.Deque(capacity: 8)
@@ -97,24 +78,18 @@ extension Executor.Job.Deque {
                 #expect(d.push(unsafe UnownedJob.mock(i)))
             }
 
-            // Owner takes LIFO: 4, 3
             #expect(unsafe d.take()!.tag == 4)
             #expect(unsafe d.take()!.tag == 3)
 
-            // Stealer takes FIFO: 0
             #expect(unsafe d.steal()!.tag == 0)
 
-            // Owner takes remaining LIFO: 2, 1
             #expect(unsafe d.take()!.tag == 2)
             #expect(unsafe d.take()!.tag == 1)
 
-            // Empty
             #expect(d.take() == nil)
             #expect(d.steal() == nil)
         }
 
-        // V2: Contended push/take/steal with count reconciliation
-        // (port of spike V2). Verifies pushed == taken + stolen.
         @Test
         func `contended Count Reconciliation`() async {
             let h = HeapHarness(capacity: 4096)
@@ -122,7 +97,7 @@ extension Executor.Job.Deque {
             let stealerCount = 4
 
             await withTaskGroup(of: Void.self) { group in
-                // Owner
+
                 group.addTask {
                     var pushed = 0
                     var localTaken = 0
@@ -143,7 +118,6 @@ extension Executor.Job.Deque {
                     h.pushDone.store(1, ordering: .releasing)
                 }
 
-                // Stealers
                 for _ in 0..<stealerCount {
                     group.addTask {
                         var localStolen = 0

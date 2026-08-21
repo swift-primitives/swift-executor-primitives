@@ -1,49 +1,9 @@
-// ===----------------------------------------------------------------------===//
-//
-// This source file is part of the swift-primitives open source project
-//
-// Copyright (c) 2024-2026 Coen ten Thije Boonkkamp and the swift-primitives
-// project authors. Licensed under Apache License v2.0
-//
-// See LICENSE for license information
-//
-// ===----------------------------------------------------------------------===//
-
 public import Executor_Job_Primitives
 public import Index_Primitives
 public import Synchronization
 
 extension Executor.Job {
-    // WHY: @unchecked Sendable — thread safety is guaranteed by the Chase-Lev
-    // algorithm's atomic orderings (acquire/release on push/steal,
-    // sequentially-consistent on take's last-element CAS), not by Swift's
-    // Sendable checking. Single-owner (push/take), multi-stealer protocol
-    // ensures no data races.
-    // TRACKING: Standard concurrency primitive; no removal criteria.
-    /// Chase-Lev work-stealing deque for executor jobs.
-    ///
-    /// Reference: Lê and colleagues, 2013 (the original Chase-Lev paper).
-    ///
-    /// Single-owner, multi-stealer bounded deque backed by a heap-allocated
-    /// ring buffer. The owner calls ``push(_:)`` and ``take()``; any thread
-    /// may call ``steal()``. Thread safety is guaranteed by the Chase-Lev
-    /// algorithm's atomic orderings — no external lock required.
-    ///
-    /// - Important: `UnownedJob` is `BitwiseCopyable`. The Chase-Lev protocol
-    ///   relies on element loads and stores being atomic at the word level;
-    ///   no per-slot lifecycle management is needed.
-    ///
-    /// ## Safety Invariant
-    ///
-    /// Pointer-backed value type (`@safe` absorber per [MEM-SAFE-020]; disclosure
-    /// per [MEM-SAFE-025c]). `_elements` points at the tail allocation of the
-    /// `ManagedBuffer` instance pinned by `_storage` — a class-owned, stable heap
-    /// allocation that lives exactly as long as this struct, so the cached pointer
-    /// neither moves nor dangles. Every slot access is masked in-bounds
-    /// (`index & _mask`; capacity is a power of two), and the racing owner/stealer
-    /// accesses to the slots are guarded by the Chase-Lev atomic orderings on
-    /// `_top`/`_bottom` ([MEM-SAFE-024] Category A). No pointer escapes the
-    /// public API.
+
     @safe
     public struct Deque: ~Copyable, @unchecked Sendable {
         @usableFromInline
@@ -61,9 +21,6 @@ extension Executor.Job {
         @usableFromInline
         internal let _bottom: Atomic<Int>
 
-        /// Creates a bounded deque with the given capacity.
-        ///
-        /// - Parameter capacity: Maximum number of jobs. Must be a power of two.
         @inlinable
         public init(capacity: Int) {
             precondition(
@@ -83,54 +40,31 @@ extension Executor.Job {
 }
 
 extension Executor.Job.Deque {
-    /// Approximate number of pending jobs.
-    ///
-    /// Because `top` and `bottom` are read independently, the count may be
-    /// transiently stale. The result is clamped to zero.
+
     @inlinable
     public var count: Index<UnownedJob>.Count {
         let b = _bottom.load(ordering: .relaxed)
         let t = _top.load(ordering: .relaxed)
-        // WHY: `max(0, b - t)` clamps to a non-negative Int, which is always within
-        // Count's valid range — the throwing init never fails for a clamped value.
-        // swift-format-ignore: NeverUseForceTry
-        // swiftlint:disable:next force_try
+
         return try! .init(max(0, b - t))
     }
 
-    /// Whether the deque appears empty.
-    ///
-    /// Approximate: a concurrent ``push(_:)`` or ``steal()`` may change the
-    /// answer between the check and the caller's next operation.
     @inlinable
     public var isEmpty: Bool {
         _bottom.load(ordering: .relaxed) <= _top.load(ordering: .relaxed)
     }
 
-    /// Owner-side push.
-    ///
-    /// Returns `true` on success, `false` if full.
-    ///
-    /// - Precondition: Called only by the owning thread.
     @inlinable
     public func push(_ job: UnownedJob) -> Bool {
         let b = _bottom.load(ordering: .relaxed)
         let t = _top.load(ordering: .acquiring)
         if b - t >= _storage.header { return false }
-        // SAFETY: `_elements` is the class-owned, stable ManagedBuffer tail
-        // allocation pinned by `_storage`; `b & _mask` is masked in-bounds by
-        // the power-of-two capacity invariant, so the advanced pointer never
-        // escapes the allocation.
+
         unsafe _elements.advanced(by: b & _mask).pointee = job
         _bottom.store(b + 1, ordering: .releasing)
         return true
     }
 
-    /// Owner-side take (LIFO).
-    ///
-    /// Returns `nil` if empty.
-    ///
-    /// - Precondition: Called only by the owning thread.
     @inlinable
     public func take() -> UnownedJob? {
         let oldB = _bottom.load(ordering: .relaxed)
@@ -143,14 +77,9 @@ extension Executor.Job.Deque {
             return nil
         }
 
-        // SAFETY: `_elements` is the class-owned, stable ManagedBuffer tail
-        // allocation pinned by `_storage`; `b & _mask` is masked in-bounds by
-        // the power-of-two capacity invariant, so the advanced pointer never
-        // escapes the allocation.
         let value = unsafe _elements.advanced(by: b & _mask).pointee
         if t < b { return value }
 
-        // Last element — race with stealers via CAS on top.
         let (won, _) = _top.compareExchange(
             expected: t,
             desired: t + 1,
@@ -161,9 +90,6 @@ extension Executor.Job.Deque {
         return won ? value : nil
     }
 
-    /// Stealer-side steal (FIFO).
-    ///
-    /// Returns `nil` if empty or contention loss. May be called from any thread.
     @inlinable
     public func steal() -> UnownedJob? {
         let t = _top.load(ordering: .acquiring)
@@ -171,10 +97,6 @@ extension Executor.Job.Deque {
 
         if t >= b { return nil }
 
-        // SAFETY: `_elements` is the class-owned, stable ManagedBuffer tail
-        // allocation pinned by `_storage`; `t & _mask` is masked in-bounds by
-        // the power-of-two capacity invariant, so the advanced pointer never
-        // escapes the allocation.
         let value = unsafe _elements.advanced(by: t & _mask).pointee
         let (won, _) = _top.compareExchange(
             expected: t,
